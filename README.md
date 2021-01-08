@@ -1,1 +1,5 @@
-# Patterns_Unity_V2
+# Patterns sur Unity
+
+* Observer
+* Command
+* Strategy
