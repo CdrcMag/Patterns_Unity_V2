@@ -3,3 +3,11 @@
 * Observer
 * Command
 * Strategy
+
+## Explications
+
+### Observer
+
+### Command
+
+### Strategy
