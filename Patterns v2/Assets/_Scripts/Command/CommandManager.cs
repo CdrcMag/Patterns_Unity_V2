@@ -14,9 +14,9 @@ public class CommandManager : MonoBehaviour
                 Debug.LogError("The command manager is missing.");
             return _instance;
         }
+
     }
 
-    //List of commands
     private List<ICommand> _commandsBuffer = new List<ICommand>();
 
     //External method to view the buffer in the console

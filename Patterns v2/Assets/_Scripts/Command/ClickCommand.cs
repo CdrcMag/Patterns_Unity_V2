@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClickCommand : ICommand
+public class ClickCommand : ICommand 
 {
     private GameObject _cube;
     private Color _color;
@@ -33,4 +33,5 @@ public class ClickCommand : ICommand
     {
         _cube.GetComponent<MeshRenderer>().material.color = Color.white;
     }
+    
 }

@@ -6,27 +6,11 @@ using System;
 public class Cube : MonoBehaviour
 {
 
-    public static event Action onCubeClicked;
-
-    //Sets a random color at start
-    private void Start() => setRandomColor();
+    public static event Action<GameObject> onCubeClicked;
 
     //On mouse down, calls this event
-    private void OnMouseDown() => onCubeClicked?.Invoke();
+    private void OnMouseDown() => onCubeClicked?.Invoke(gameObject);
 
-
-
-
-    private void setRandomColor()
-    {
-        //Generates 3 floats
-        float r = UnityEngine.Random.Range(0f, 100f) / 100;
-        float g = UnityEngine.Random.Range(0f, 100f) / 100;
-        float b = UnityEngine.Random.Range(0f, 100f) / 100;
-
-        //Applies them as a color
-        Color c = new Color(r, g, b);
-        GetComponent<Renderer>().material.color = c;
-    }
+    
 
 }

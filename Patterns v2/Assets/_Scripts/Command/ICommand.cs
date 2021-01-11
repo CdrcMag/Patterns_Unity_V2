@@ -10,5 +10,4 @@ public interface ICommand
     void ResetColor();
 
 
-
 }
