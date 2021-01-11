@@ -11,12 +11,6 @@ public class Observer : MonoBehaviour
     //When disabled, unsubscribes the event from the function
     private void OnDisable() => Cube.onCubeClicked -= HasClickedOnCube;
 
-    //private void HasClickedOnCube()
-    //{
-    //    cptClic += 1;
-    //    print("You clicked on a cube. Total : " + cptClic);
-    //}
-
     private void HasClickedOnCube(GameObject o)
     {
         Color c = new Color(Random.value, Random.value, Random.value);
